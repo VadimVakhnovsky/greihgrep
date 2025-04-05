@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Demo</title>
+</head>
+<body>
+    <h1>Sorting Algorithms Demo</h1>
+    <button onclick="testSorting()">Test Sorting</button>
+    <script src="sortingLibrary.js"></script>
+    <script>
+        function testSorting() {
+            const testArray = [5, 2, 8, 3, 1, 4, 7, 6, 9, 0];
+            console.log('Original Array:', testArray);
+
+            // Test Bubble Sort
+            let bubbleResult = bubbleSort([...testArray], true);
+            console.log('Bubble Sort (ascending):', bubbleResult);
+
+            // Test Selection Sort
+            let selectionResult = selectionSort([...testArray], true);
+            console.log('Selection Sort (ascending):', selectionResult);
+
+            // Add more sort functions here...
+        }
+    </script>
+</body>
+</html>
